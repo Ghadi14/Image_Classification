@@ -9,6 +9,13 @@ import os
 import cv2
 from tqdm import tqdm
 
+import tensorflow as tf
+from tensorflow.keras.datasets import cifar10
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten
+from tensorflow.keras.layers import Conv2D, MaxPooling2D
+
 DATADIR="/content/drive/MyDrive/Untitled folder/PetImages"
 CATEGORIES=["Dog","Cat"]
 training_data = []
